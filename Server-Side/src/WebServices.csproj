@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <PublishWithAspNetCoreTargetManifest>false</PublishWithAspNetCoreTargetManifest>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Data\**" />
+    <Content Remove="Data\**" />
+    <EmbeddedResource Remove="Data\**" />
+    <None Remove="Data\**" />
+  </ItemGroup>
+	
+		
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BitMiracle.LibTiff.NET" Version="2.4.649" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SkiaSharp.NativeAssets.Linux" Version="*" />
+    <PackageReference Include="SkiaSharp" Version="*" />
+    <PackageReference Include="Syncfusion.Compression.Net.Core" Version="*" />
+    <PackageReference Include="Syncfusion.OfficeChart.Net.Core" Version="*" />
+    <PackageReference Include="Syncfusion.SmartDataExtractor.Net.Core" Version="35.1.39" />
+    <PackageReference Include="Syncfusion.EJ2.WordEditor.AspNet.Core" Version="*" />
+    <PackageReference Include="Syncfusion.EJ2.SpellChecker.AspNet.Core" Version="*" />
+    <PackageReference Include="Syncfusion.Licensing" Version="*" />
+    <PackageReference Include="System.Drawing.Common" Version="4.*" />
+  </ItemGroup>
+
+</Project>

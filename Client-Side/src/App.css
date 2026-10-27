@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f5f5;
+}
+
+.top-bar {
+  height: 50px;
+  background: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.export-btn {
+  background: #6200ee;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.approve-btn {
+  background: #6200ee;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  min-height: 40px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.reject-btn {
+  background: white;
+  color: #e53935;
+  border: 1px solid #e53935;
+  padding: 8px 20px;
+  min-height: 40px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.secondary-btn {
+  background: white;
+  color: #6200ee;
+  border: 1px solid #6200ee;
+  padding: 10px 18px;
+  min-height: 40px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.link-action {
+  color: #6200ee;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.suggestion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.suggestion-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #03045e;
+}
+
+.remaining {
+  font-size: 16px;
+}
+
+.arrow {
+  font-size: 26px;
+  cursor: pointer;
+  color: #6a00ff;
+}
+
+.arrow.disabled {
+  color: #c9c9c9;
+  cursor: default;
+}
+
+.suggestion-panel {
+  background: #eef2f8;
+  padding: 14px 18px;
+  border-radius: 8px;
+  margin: 6px 12px;
+}
+
+.ai-content {
+  margin-top: 10px;
+  color: red;
+  font-size: 14px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.ai-content.empty {
+  color: #757575;
+  cursor: default;
+}
+
+.action-row {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.right-actions {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.editor-loading {
+  padding: 24px;
+  color: #666;
+}
+.approve-btn:disabled,
+.reject-btn:disabled,
+.secondary-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+html,
+body,
+#root {
+    height: 100%;
+    margin: 0;
+}
+
+.app-layout {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.editor-host {
+    flex: 1;
+    min-height: 0;
+}
